@@ -19,7 +19,7 @@ url.workspace = true
 serde_json.workspace = true
 tower.workspace = true
 
-reqwest = { workspace = true, features = ["serde_json", "json"], optional = true }
+reqwest = { workspace = true, features = ["serde_json", "json", "default-tls"], optional = true }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 hyper = { workspace = true, features = ["full"], optional = true }
